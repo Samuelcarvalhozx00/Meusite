@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meu Site Profissional</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #e3f2fd, #ffffff);
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #1976d2;
+      color: white;
+      padding: 20px 40px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      animation: fadeInDown 1s ease-out;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #bbdefb;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      animation: fadeIn 1.2s ease-in;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      color: #1976d2;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+
+    footer {
+      background-color: #eeeeee;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #666;
+      margin-top: 50px;
+    }
+
+    button {
+      padding: 12px 24px;
+      background-color: #1976d2;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      margin-top: 20px;
+    }
+
+    button:hover {
+      background-color: #0d47a1;
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Samuel Carvalho</h1>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#Quem sou eu">Serviços</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="sobre">
+      <h2>Oi paulinho</h2>
+      <p> estou aprendendo com o chatgpt a progamar!</p>
+    </section>
+
+    <section id="Quem sou eu">
+      <h2>Um pouco sobre mim</h2>
+      <p> Me chamo Samuel, tenho 22 anos, Parlo italiano e sou bonito</p>
+    </section>
+
+    <section id="contato">
+      <h2>Fale Comigo</h2>
+      <p>Entre em contato para suporte sobre progamação pois sou o melhor do mundo</p>
+      <button onclick="alert('Obrigado pelo interesse! Em breve entrarei em contato.')">Enviar mensagem</button>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 - Desenvolvido Samuel Carvalho
+  </footer>
+
+</body>
+</html>
+
